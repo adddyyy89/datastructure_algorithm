@@ -1,6 +1,6 @@
 public class Permutation {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
+        int[] arr = {1, 2, 3, 4};
         perm(arr, 0, arr.length);
     }
 
@@ -15,7 +15,7 @@ public class Permutation {
                 //System.out.println("Performing Swap : " + k + ", " + m);
                 swap(arr, i, k);
 
-                perm(arr, i+1, m);
+                perm(arr, k+1, m);
 
                 //System.out.println("Performing Swap : " + k + ", " + m);
                 swap(arr, k, i);
